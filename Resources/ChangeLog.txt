@@ -1,0 +1,235 @@
+For anyone who's reading this, well, enjoy reading my self-comments & progress.
+I figured it would be a great way to improve my English and, well, kill time, maybe
+keep tracks of my work too, so I can put up a change log on my future website...
+I needed a text file which can be edited as quickly as possible, so I decided I would
+add it to the resources.I may add a way to read this file in the program soon.
+
+This includes:
+	A to-do list (which I probably will never complete)
+	A complete change log with the builds
+	
+From build 20, I decided to exclude this file from the program's executable
+
+I. TODO:
+	*  Add file splitting function
+		PROGRESS: Still need to fix bugs & improve
+	*  Add file merging function
+		PROGRESS: Still need to fix bugs & improve
+	=> Fix bugs (will never be done...)
+	=> Finish the encrypt function
+		PROGRESS: Pretty close, I'll need just a few hours to finish this.
+		I'm just too lazy to lay my hands on it ^^
+	-  Rewrite from scratch the Split & Merge codes
+		PROGRESS: Had the idea, checked and it's possible, but may take a
+		day to finish.
+	-  Add File checksum function
+		PROGRESS: Had the idea, it's possible.
+	-  Add File mass renamer function
+		PROGRESS: Had the idea, but still figuring out several stuffs.
+	-  Add File searching function
+		PROGRESS: Had the idea, not sure about the performance, though.
+	-  Add File packing function
+		PROGRESS: Had the idea, it's possible, and will be fun to implement
+	-  Add encrypting for splitting & merging
+		PROGRESS: Had the idea, but only possible after I rewrite the splitting &
+		merging code
+	-  Add duplicate file finding function
+		PROGRESS: Had the idea, not sure if it's possible and about the performance.
+	-  Add icons
+		PROGRESS: Will be done when I want to kill time
+	#  Add associations & commands
+		PROGRESS: Finished for Merging function. Not sure for the splitting function, though
+	#  (Most unlikely: Add the ability to change skins)
+		PROGRESS: Got the idea and the basics, even trying the button, it will be very
+		time-consuming and not-needed though.
+	#  (Most unlikely: Code everything from scratch in VB6)
+		PROGRESS: If this thing's wanna be portable, then VB6 suits it the most. Fortunately,
+		with Windows 7 and Vista, hopefully I won't need to do this.
+	#  Make this thing open-sourced
+		PROGRESS: Only after I give up this project and like throw it away. The embarrassment
+		with how unprofessional & messed up the code is is just too much to bear...
+	#  Clean the code
+		PROGRESS: This will make things a little easier for me to debug & open-source this.
+		Unfortunately, I don't have time to do it.
+	#  Improve the split/merge progress with multi threading
+		PROGRESS: I thought of the idea, but not sure if it'll boost the performance. I must
+		take some experiments, if the speed differences is so noteable, I may do it to compete
+		with other file splitting/merging programs.
+	
+	Legends:
+		*  : Done
+		=> : In progress
+		-  : Will be done
+		#  : Optional
+	Estimated time to finish: Probably 2011...
+	
+	
+II. CHANGE LOG:
+
+15/6/2009: Version 1.00 Beta Build 1
+	New Features:
+		Started the project
+		Finished the splitting function
+		Finished the interface for merging function
+	Bugs Fixed:
+		Fixed a critical bug in the splitting function
+		Fixed some memory leaks
+		Added some error handlers
+		 _________________________________________________________________________
+		| COMMENTS: The initial release of File Splitter. I really hope it can get|
+		|           farther from here                                             |
+		o-------------------------------------------------------------------------o
+
+16/6/2009: Version 1.00 Beta Build 2
+	New Features:
+		Added some interface elements for merging function
+		Finished the merging function
+	Bugs Fixed:
+		Cleaned up some code
+		Changed the way some functions work (should speed them up by a tiny little bit)
+		Fixed a progress bar bug
+		Fixed a timer bug
+		Improved the error handlers
+		 _________________________________________________________________________
+		| COMMENTS: This is another important release as the file merging function|
+		|           is added.                                                     |
+		o-------------------------------------------------------------------------o
+		
+		   Version 1.00 Beta Build 3
+	New Features:
+		Added caching function
+		Added a file name checker
+	Bugs Fixed:
+		Fixed some interface bugs
+		
+			Version 1.00 Beta Build 4
+	Bugs Fixed: A lot of minor bugs
+		
+17/6/2009: Version 1.00 Beta Build 5
+	New Features:
+		The ability to change languages
+		 _________________________________________________________________________
+		|           Language-changing ability is not a priority and not a very    |
+		|           important function. I just added it for the sake of           |
+		| COMMENTS: completeness. Besides, I always want to make English programs,|
+		|           but people in Vietnam of course want the progs to have        |
+		|           Vietnamese interface. So I feel adding this ability would     |
+		|           satisfy everyone including myself ^^                          |
+		o-------------------------------------------------------------------------o
+		
+18/6/2009: Version 1.00 Beta Build 6
+	Bugs Fixed: 
+		A minor bug with the folder selector
+		
+			Version 1.00 Beta Build 7
+	New Features: 
+		Improved the 'Stop' button behavior
+		Improved the speed
+		
+19/6/2009: Version 1.00 Beta Build 7 *Contains major changes
+	Bugs Fixed:
+		A critical bug with closing the window while split/merge is progressing
+		Cleaned up the code+fixed some minor bugs
+	New Features:
+		Used multi-threading for the splitting process		
+		 ________________________________________________________________________
+		|           Adding multi-threading made a major performance boost for my |
+		|           program. Plus, with this, the program should work better with|
+		|           less bugs, the 'Stop' button should work better. Plus, with  |
+		| COMMENTS: this, there's no need for caching if you have a lot of memory|
+		|           as the program can still run flawlessly, no need to add codes|
+		|           to response to Windows messages so it's not 'Not Responding' |
+		|           or as I and most people usually say, 'hang'                  |
+		o------------------------------------------------------------------------o
+		
+21/6/2009: Version 1.00 Beta Build 8
+	New Features:
+		Used multi-threading for the merging process
+		Removed the timer completely
+	Bug Fixed:
+		Changed the splitting/merging text a little
+		
+27/6/2009: (Finally finished my exam) Version 1.00 Beta Build 9
+	New Features:
+		Added a check to choose if the program should limit the buffer size
+		Added a insufficient memory error handler
+		
+25/7/2009: (Long time, minor changes) Version 1.00 Beta Build 10
+	New Features:
+		Automatically create folders for splitting
+	Bugs Fixed:
+		A minor bug with the drag-and-drop function
+		Changed the dialog filter setting with the language files
+		Improved the progress bar with more details
+		
+		 _________________________________________________________________________
+		|           I was bored with the project since the end of last month, so I|
+		|           decided to give up with it. But my friend helped me notice    |
+		|           that Mediafire've just put a server in Vietnam, so the        |
+		|           is so much faster. I took the chance to download some stuff,  |
+		| COMMENTS: and I need a file-joining program afterwards to merge my files|
+		|           I used this program, and as it was inconvenience, I decided to|
+		|           revive the project and working with the bugs (Well, I can't   |
+		|           find bugs if I don't use the program, and I'll be using it for|
+		|           whole upcoming days, I'll fix all the bugs I can find, adding |
+		|           new functions, to make it more convenience for me ^^          |
+		o-------------------------------------------------------------------------o
+		
+26/7/2009: Version 1.00 Beta Build 11
+	New Features:
+		Added the 'Reset' button to reset forms
+		Added the merge-file-exists check
+	Bugs Fixed:
+		Some minor bugs with the 'Remove' button
+		   Version 1.00 Beta Build 12
+	Bugs Fixed: A few minor bugs, cleaned the code a little bit
+		(it should be faster, but nearly unnoticeable)
+		
+27/7/2009: Version 1.00 Beta Build 13
+	New Features:
+		Added file association for merging function
+		
+			Version 1.00 Beta Build 14
+	New Features:
+		Added the ability to save & load application settings
+		
+30/7/2009: Version 1.00 Beta Build 14
+	New Features:
+		Added batch file creation function
+		 ______________________________________________________________________
+		|       the function is very basic, with no error handler, and I plan  |
+		| NOTE: no further support for it, since it's not so important in my   |
+		|       opinion. I just added it because I was bored. Really, it's a   |
+		|       nice time killer.                                              |
+		o----------------------------------------------------------------------o
+	Bugs Fixed:
+		Fixed an error with the default English language file
+		
+31/7/2009: Version 1.00 Beta Build 15
+	Bugs Fixed:
+		Fixed a bug with getting the splitted file names
+
+1/8/2009: Version 1.00 Beta Build 16
+	New Features:
+		Saving window position
+		
+2/8/2009: Version 1.00 Beta Build 17
+	Bugs Fixed:
+		A small bug with counting the parts (I forgot to change this after build 10,
+		so the program always counted 100, as the progress bar's maximum value)
+		
+4/8/2009: Version 1.00 Beta Build 18
+	Bugs Fixed:
+		Some problems with the security settings
+		Removed some unused variables & functions (mainly, these are used for testing)
+		 ______________________________________________________________________
+		|       In this build, I'm also getting closer to finishing the encrypt|
+		| NOTE: function. I coded a few key and IV generating functions, and   |
+		|       made a base class for the encryption/decryption progress. Hope |
+		|       the function will be done in the next few days...              |
+		o----------------------------------------------------------------------o
+		
+5/8/2009: Version 1.00 Beta Build 19
+	Bugs Fixed:
+		Changed file deleting behavior. Now the program only deletes the files after
+		the progress is completed.
